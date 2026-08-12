@@ -11,10 +11,12 @@ Navigate through an office environment filled with obstacles. Jump over office c
 ### Controls
 
 **Desktop:**
+
 - **↑ or Space** — Jump
 - **↓** — Crawl (hold to continue crawling)
 
 **Mobile:**
+
 - **JUMP** button — Jump
 - **CRAWL** button — Crawl (hold to continue crawling)
 
@@ -68,10 +70,6 @@ RestaurantRunner/
 4. Click "Grab a Snack" to start
 5. Navigate through the office!
 
-### GitHub Pages
-
-This game can be deployed to GitHub Pages by pushing the repository and enabling GitHub Pages in the repository settings. Simply navigate to `https://[username].github.io/RestaurantRunner/` to play online.
-
 ## 🎯 Tips & Strategies
 
 - **Collect treats strategically** — Don't just grab everything; manage your speed
@@ -94,6 +92,7 @@ Your high score is automatically saved in your browser's local storage. Clear yo
 ## 🎨 Customization
 
 You can customize the game by editing:
+
 - **colors** in `styles.css` (look for CSS variables like `--gold`, `--coral`, etc.)
 - **physics** in `main.js` (gravity, jump velocity, speed ramp)
 - **spawn rates** in `main.js` (obstacle frequencies, pastry spawn heights)
