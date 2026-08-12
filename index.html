@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Snack Attack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="stage">
+      <div id="gameWrap">
+        <canvas id="game" width="960" height="480"></canvas>
+
+        <div id="hud">
+          <div class="hud-box">
+            📏 <span id="scoreVal">0</span> m &nbsp;|&nbsp; 🏆
+            <span id="bestVal">0</span> m
+          </div>
+          <div class="hud-meters">
+            <div class="hud-box meter-box" id="croissantBox">
+              <div class="meter-label">
+                <span>🥐</span><span id="croissantPct">0%</span>
+              </div>
+              <div class="meter-track">
+                <div id="croissantFill" class="meter-fill-slow"></div>
+              </div>
+            </div>
+            <div class="hud-box meter-box" id="cakeBox">
+              <div class="meter-label">
+                <span>🎂</span><span id="cakePct">0%</span>
+              </div>
+              <div class="meter-track">
+                <div id="cakeFill" class="meter-fill-fast"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="touchControls">
+          <div class="tbtn" id="tbtnCrawl">CRAWL<br />hold</div>
+          <div class="tbtn" id="tbtnJump">JUMP</div>
+        </div>
+
+        <!-- MENU -->
+        <div class="overlay" id="menuScreen">
+          <h1 class="title">Snack Attack</h1>
+          <p class="subtitle">
+            Rush to the break room! Jump over chairs and bins, crawl under
+            desks, and grab treats. Sweets speed you up, sours slow you down!
+          </p>
+          <div class="avatars">
+            <div class="avatarCard selected" id="cardBoy" data-avatar="boy">
+              <canvas width="90" height="90"></canvas>
+              <span>Boy</span>
+            </div>
+            <div class="avatarCard" id="cardGirl" data-avatar="girl">
+              <canvas width="90" height="90"></canvas>
+              <span>Girl</span>
+            </div>
+          </div>
+          <input
+            type="text"
+            id="playerName"
+            class="playerNameInput"
+            placeholder="Enter your name..."
+            maxlength="20"
+          />
+          <button id="startBtn">Grab a Snack</button>
+          <p class="hint">
+            Desktop: <b>↑/Space</b> jump · <b>↓</b> crawl.<br />Collect sweets
+            to speed up, sours to slow down!
+          </p>
+        </div>
+
+        <!-- GAME OVER -->
+        <div class="overlay hidden" id="overScreen">
+          <h1 class="title" style="color: var(--coral)">Break Time's Over!</h1>
+          <p class="playerNameDisplay" id="playerNameDisplay"></p>
+          <div class="statsRow">
+            <div class="statBlock">
+              <div class="num" id="finalScore">0</div>
+              <div class="lab">Meters</div>
+            </div>
+            <div class="statBlock">
+              <div class="num" id="finalBest">0</div>
+              <div class="lab">Best</div>
+            </div>
+            <div class="statBlock">
+              <div class="num" id="finalPastries">0</div>
+              <div class="lab">Treats</div>
+            </div>
+          </div>
+          <div id="newBestTag" class="newBest hidden">✨ NEW HIGH SCORE ✨</div>
+          <button id="retryBtn">Try Again</button>
+          <button class="ghostBtn" id="menuBtn">Change Avatar</button>
+        </div>
+      </div>
+      <footer class="credit">
+        Local high score only — stored in this browser.
+      </footer>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

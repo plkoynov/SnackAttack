@@ -1,0 +1,37 @@
+<svg viewBox="0 0 50 67" xmlns="http://www.w3.org/2000/svg">
+  <!-- Backrest (tall to indicate JUMP OVER) -->
+  <ellipse cx="25" cy="15" rx="18" ry="20" fill="#5a7a8f"/>
+  <!-- Backrest outline -->
+  <ellipse cx="25" cy="15" rx="18" ry="20" fill="none" stroke="#3a5a6f" stroke-width="1.5"/>
+  <!-- Backrest vertical lines for depth -->
+  <line x1="15" y1="5" x2="15" y2="25" stroke="#7a9aaf" stroke-width="1" opacity="0.6"/>
+  <line x1="25" y1="2" x2="25" y2="28" stroke="#7a9aaf" stroke-width="1" opacity="0.6"/>
+  <line x1="35" y1="5" x2="35" y2="25" stroke="#7a9aaf" stroke-width="1" opacity="0.6"/>
+
+  <!-- Left armrest -->
+  <rect x="2" y="30" width="6" height="15" fill="#4a6a7f" rx="2"/>
+  <!-- Right armrest -->
+  <rect x="42" y="30" width="6" height="15" fill="#4a6a7f" rx="2"/>
+
+  <!-- Seat base (wider, more prominent) -->
+  <ellipse cx="25" cy="42" rx="18" ry="8" fill="#6a8a9f"/>
+  <ellipse cx="25" cy="42" rx="18" ry="8" fill="none" stroke="#3a5a6f" stroke-width="1"/>
+
+  <!-- Seat support cylinder -->
+  <rect x="22" y="42" width="6" height="15" fill="#4a6a7f"/>
+
+  <!-- Left wheel -->
+  <circle cx="10" cy="62" r="5" fill="#3a5a6f" stroke="#2a4a5f" stroke-width="1"/>
+  <circle cx="10" cy="62" r="2.5" fill="#1a3a4f"/>
+
+  <!-- Right wheel -->
+  <circle cx="40" cy="62" r="5" fill="#3a5a6f" stroke="#2a4a5f" stroke-width="1"/>
+  <circle cx="40" cy="62" r="2.5" fill="#1a3a4f"/>
+
+  <!-- Center wheel -->
+  <circle cx="25" cy="62" r="5" fill="#3a5a6f" stroke="#2a4a5f" stroke-width="1"/>
+  <circle cx="25" cy="62" r="2.5" fill="#1a3a4f"/>
+
+  <!-- Gas cylinder base -->
+  <rect x="23" y="57" width="4" height="5" fill="#2a2a2a"/>
+</svg>
