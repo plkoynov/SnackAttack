@@ -57,18 +57,28 @@ RestaurantRunner/
 
 ## 🛠️ Technologies
 
-- **HTML5 Canvas** — Game rendering
+- **[PixiJS](https://pixijs.com/)** — WebGL-based 2D rendering (loaded via CDN)
 - **Vanilla JavaScript** — Game logic and state management
 - **CSS3** — UI styling and animations
 - **SVG** — Obstacle and character graphics
 
 ## 🚀 Getting Started
 
-1. Open `index.html` in your web browser
-2. Enter your name
-3. Select your character avatar
-4. Click "Grab a Snack" to start
-5. Navigate through the office!
+Serve the folder over HTTP rather than opening `index.html` directly (`file://`) —
+some browsers (notably Firefox) block WebGL from uploading locally-loaded
+SVG images as textures under `file://`, which breaks the obstacle art. Any
+static server works, e.g.:
+
+```
+python3 -m http.server 8000
+```
+
+Then:
+
+1. Open the served page (e.g. `http://localhost:8000`) in your web browser
+2. Select your character avatar
+3. Click "Grab a Snack" to start
+4. Navigate through the office!
 
 ## 🎯 Tips & Strategies
 
@@ -106,6 +116,23 @@ You can customize the game by editing:
 ## 🤝 Contributing
 
 Found a bug or have a suggestion? Feel free to open an issue or submit a pull request!
+
+## 📜 Credits & Third-Party Licenses
+
+This game uses [PixiJS](https://pixijs.com/) for rendering, licensed under the
+MIT License:
+
+> Copyright (c) 2013-2023 Mathew Groves, Chad Engler
+>
+> Permission is hereby granted, free of charge, to any person obtaining a copy
+> of this software and associated documentation files (the "Software"), to
+> deal in the Software without restriction, including without limitation the
+> rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+> sell copies of the Software, and to permit persons to whom the Software is
+> furnished to do so, subject to the following conditions:
+>
+> The above copyright notice and this permission notice shall be included in
+> all copies or substantial portions of the Software.
 
 ---
 

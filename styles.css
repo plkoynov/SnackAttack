@@ -232,27 +232,6 @@ canvas {
   font-family: 'Baloo 2';
   font-size: 15px;
 }
-.playerNameInput {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 16px;
-  padding: 10px 16px;
-  border-radius: 8px;
-  border: 1px solid rgba(227, 165, 63, 0.4);
-  background: rgba(21, 34, 41, 0.6);
-  color: var(--cream);
-  text-align: center;
-  width: 200px;
-  max-width: 90%;
-  transition: border-color 0.2s, background 0.2s;
-}
-.playerNameInput::placeholder {
-  color: rgba(247, 242, 231, 0.5);
-}
-.playerNameInput:focus {
-  outline: none;
-  border-color: var(--gold);
-  background: rgba(21, 34, 41, 0.8);
-}
 button {
   font-family: 'Baloo 2', cursive;
   font-size: 18px;
@@ -314,12 +293,6 @@ button:disabled {
   letter-spacing: 1px;
   opacity: 0.7;
   text-transform: uppercase;
-}
-.playerNameDisplay {
-  font-size: 14px;
-  color: var(--gold);
-  margin: -8px 0 8px 0;
-  font-weight: 600;
 }
 .newBest {
   font-family: 'Baloo 2';
